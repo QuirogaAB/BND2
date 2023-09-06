@@ -4,7 +4,7 @@ class ProductManager {
     constructor(){
         this.patch = "./productos.txt"
         
-        this.nextId = 1   
+        this.nextId++   
     }
 
     addProduct = async (title, description, price, thumbnail, code, stock) => {

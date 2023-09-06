@@ -1,4 +1,4 @@
-class Productmanager {
+class ProductManager {
     constructor() {
         this.products = [];
         this.nextld = 1;
@@ -9,7 +9,7 @@ class Productmanager {
     addProduct(title, description, price, thumbnail, code, stock) {
         const errorMessage = {
             requiredFields: 'Todos los campos son obligatorios',
-            codeExists: code => 'El código ${code} ya existe'
+            codeExists: code => `El código ${code} ya existe`
         };
         
         
@@ -29,7 +29,7 @@ class Productmanager {
 
     }
 
-    getProduct() {
+    getProducts() {
         return this.products;
     }
 
@@ -44,7 +44,7 @@ class Productmanager {
     }
 }
 
-const productos = new Productmanager();
+const productos = new ProductManager();
 
 productos.addProduct("Pañales Dia", "Pack de pañales para adulto absorventes de uso diario", 12000, "imagen1", "pa0355", 30);
 productos.addProduct("Pañales Noche", "Pack de pañales para adulto ultraabsorventes de uso nocturno", 14000, "imagen2", "pa0356", 30);
