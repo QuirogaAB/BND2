@@ -1,7 +1,7 @@
 class ProductManager {
     constructor() {
         this.products = [];
-        this.nextld = 1;
+        this.nextId++;
     }
 
     
